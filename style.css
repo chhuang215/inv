@@ -2,13 +2,39 @@ html,body{
 	/*color:white;*/
 	font-family: 'Open Sans', sans-serif;
     font-size:1.1em;
-	background: lightgrey;
+    
     height:100%;
 }
 
-body{
+
+.formcontain{
+    position: relative;
     width:90%;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
+    height: 100%;
 }
 
+
+#wed_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    /* opacity: 0.; */
+}
+
+.transbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: white;
+    opacity:0.5;
+    /* z-index: -1; */
+}
