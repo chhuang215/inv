@@ -1,0 +1,14 @@
+html,body{
+	/*color:white;*/
+	font-family: 'Open Sans', sans-serif;
+    font-size:1.1em;
+	background: lightgrey;
+    height:100%;
+}
+
+body{
+    width:90%;
+    max-width: 600px;
+    margin: auto;
+}
+
