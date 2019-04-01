@@ -5,17 +5,19 @@ html,body{
     /* font-family: 'Microsoft YaHei', 'Open Sans', Arial, sans-serif; */
     font-family: 'Noto Sans TC', sans-serif;
     /* font-weight: 100; */
-    font-size:1em;
+    font-size:0.97em;
     
     height:100%;
+
 }
 
 .formcontain{
     position: relative;
     width:90%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     height: 100%;
+    opacity:0;
 }
 
 
@@ -26,7 +28,7 @@ html,body{
     bottom: 0;
     /* left: 0; */
     width:100%;
-    /* opacity: 0.; */
+    opacity: 0;
 }
 
 .transbox{
@@ -38,7 +40,7 @@ html,body{
     width:100%;
     height: 100%;
     background: white;
-    opacity:0.55;
+    opacity:0.45;
     /* z-index: -1; */
-    border-radius: 1em
+    border-radius: .7em
 }
