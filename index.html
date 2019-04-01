@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>INV</title>
+    <title>Wedding</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,9 +26,9 @@
             <div class="col-sm-4">
                
                 <h2>黃至璿 & 黎明</h2>
-                <h2>結婚典禮</h2>
-                <h3>嘉義 5/18</h3>
-                <h3>台北 5/25</h3>
+                <h3>結婚典禮</h3>
+                <h3>嘉義 5/18 10AM</h3>
+                <h3>台北 5/25 06PM</h3>
             </div>
 
 
@@ -59,7 +59,7 @@
                         <label class="col-form-label">與新人的關係是:</label>
                       </div>
 
-                      <div class="btn-group btn-group-toggle col-xs-6" data-toggle="buttons">
+                      <div class="btn-group btn-group-toggle col-xs-7" data-toggle="buttons">
                         <label class="btn btn-info active">
                           <input type="radio" name="entry.10316538" jsname="L9xHkb" autocomplete="off" value="男方" checked> 男方親友
                         </label>
@@ -76,7 +76,7 @@
 
                       <div class="col-xs-3">
                           <input type="number" value="0"
-                                class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
+                                class="form-control" jsname="YPqjbf"
                                 autocomplete="off" tabindex="0" aria-label="5/18嘉義場 人數"
                                 aria-describedby="i.desc.959110369 i.err.959110369"
                                 name="entry.716363362" required dir="auto"
@@ -94,7 +94,7 @@
 
                       <div class="col-xs-3">
                           <input type="number" value="0"
-                            class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
+                            class="form-control" jsname="YPqjbf"
                             autocomplete="off" tabindex="0" aria-label="5/25台北場 人"
                             aria-describedby="i.desc.1206703925 i.err.1206703925"
                             name="entry.1998299711" required dir="auto"
@@ -188,8 +188,8 @@
                     </div>
 -->
     
-                    <input class="btn btn-warning" type="submit" value="Send" />
-                    <span id="msgTY" hidden="true"> 謝謝，已寄出 </span>
+                    <input class="btn btn-warning" type="submit" value="送出" />
+                    <span id="msgTY" hidden="true"> 謝謝，已送出 </span>
                   </form>
     
             </div>
@@ -201,12 +201,10 @@
 
     </div>
     
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#msgTY').show()}"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="formSubmit()"></iframe>
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script>
-      var submitted=false;
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
