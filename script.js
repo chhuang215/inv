@@ -26,6 +26,26 @@ $('#chkTp').change(function(){
     }
 });
 
+$('.rbNeedChair').change(function(){
+    if($(this).val()==1){
+        $('#inputKidsChair').show(400)
+    }
+    else{
+        $('#inputKidsChair').hide(400);
+        $('#inputKidsChair input').val("");
+    }
+})
+
+$('.rbVegan').change(function(){
+    if($(this).val()==1){
+        $('#inputVegan').show(400)
+    }
+    else{
+        $('#inputVegan').hide(400);
+        $('#inputVegan input').val("");
+    }
+})
+
 $(document).ready(function () {
     $('#wed_img').delay(200).animate({'opacity':'1'},700);
     $('.formcontain').delay(600).animate({'opacity':'1'},600);

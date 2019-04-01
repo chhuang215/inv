@@ -72,15 +72,19 @@
                         </label>
                       </div>
                     </div>
+
+
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6" style="padding-bottom: 7px">
                         <div class="btn-group-toggle" data-toggle="buttons">
-                          <label class="btn btn-warning ">
+                          <label class="btn btn-warning btn-block ">
                             <input type="checkbox"  autocomplete="off" id="chkCy"> 參加 5/18 嘉義場?
                           </label>
                         </div>
                       </div>
                     </div>
+
+
                     <div class="form-group row" hidden id="attendCy">
                       <div class="col-sm-4 col-xs-7" style="text-align: right">
                         <label class="col-form-label">5/18嘉義場 參加人數</label>
@@ -94,14 +98,12 @@
                                 name="entry.716363362" required dir="auto"
                                 data-initial-dir="auto" data-initial-value="" />
                       </div>
-
-                      
                     </div>
 
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-6" style="padding-bottom: 7px">
                         <div class="btn-group-toggle" data-toggle="buttons">
-                          <label class="btn btn-warning ">
+                          <label class="btn btn-warning btn-block">
                             <input type="checkbox" autocomplete="off" id="chkTp"> 參加 5/25 台北場?
                           </label>
                         </div>
@@ -127,7 +129,7 @@
                     </div>
 
                     <div class="form-group row">
-                      <div class="col-xs-4">
+                      <div class="col-sm-3 col-xs-4">
                         <label  class="col-form-label">喜帖寄到家?</label>
                       </div>
                       
@@ -176,31 +178,51 @@
                     <div><h4>特殊需求</h4></div>
 
                     <div class="form-group row">
-                      <div class="col-sm-3 col-xs-5">
-                        <label  class="col-form-label ">幾個兒童座椅</label>
+                      <div class="col-xs-12">
+                        <label  class="col-form-label ">兒童座椅</label>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-sm btn-default active">
+                            <input type="radio" name="options" class="rbNeedChair" value="0" checked> 不需要
+                          </label>
+                          <label class="btn btn-sm btn-success">
+                            <input type="radio" name="options" value="1" class="rbNeedChair"> 需要
+                          </label>
+                        </div>
                       </div>
 
-                      <div class="col-sm-6 col-xs-6">
-                          <input type="text"
-                                class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
-                                autocomplete="off" tabindex="0" aria-label="幾個兒童座椅"
-                                aria-describedby="i.desc.1525133851 i.err.1525133851"
-                                name="entry.933076703" value="" dir="auto" data-initial-dir="auto"
-                                data-initial-value="" />
+                      <div class="col-sm-6 col-xs-6" hidden id="inputKidsChair">
+                            <input type="text" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0"
+                              aria-describedby="i.desc.1525133851 i.err.1525133851" name="entry.933076703" value="" dir="auto"
+                              data-initial-dir="auto" data-initial-value="" placeholder="需要幾個兒童椅" />
                       </div>
                     </div>
 
                     <div class="form-group row">
-                      <div class="col-sm-3 col-xs-5">
-                        <label  class="col-form-label ">幾人吃素</label>
+
+                      <div class="col-xs-12">
+                        <label  class="col-form-label">需要安排素食</label>
                       </div>
-                      <div class="col-sm-6 col-xs-6">
+
+                      <div class="col-sm-4 col-xs-6">
+                        
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-sm btn-default active">
+                            <input type="radio" name="options" class="rbVegan" value="0" checked> 不需要
+                          </label>
+                          <label class="btn btn-sm btn-success">
+                            <input type="radio" name="options" value="1" class="rbVegan"> 需要
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-6" hidden id="inputVegan">
                           <input type="text"
                                 class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
-                                autocomplete="off" tabindex="0" aria-label="幾人吃素"
+                                autocomplete="off" tabindex="0"
                                 aria-describedby="i.desc.1171281634 i.err.1171281634"
                                 name="entry.1775851991" value="" dir="auto" data-initial-dir="auto"
-                                data-initial-value="" />
+                                data-initial-value="" placeholder="幾個人吃素" />
                       </div>
                     </div>
 
