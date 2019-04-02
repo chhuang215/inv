@@ -1,49 +1,48 @@
-.btn-pink {
-  color: #FFFFFF;
-  background-color: #FF7DC7;
-  border-color: #FF6BBF;
+.btn-pink { 
+  color: #FFFFFF; 
+  background-color: #FFCFCF; 
+  border-color: #FFCFCF; 
+} 
+ 
+.btn-pink:hover, 
+.btn-pink:focus, 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  color: #FFFFFF; 
+  background-color: #FFBFBF; 
+  border-color: #FFCFCF; 
+} 
+ 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  background-image: none; 
+} 
+ 
+.btn-pink.disabled, 
+.btn-pink[disabled], 
+fieldset[disabled] .btn-pink, 
+.btn-pink.disabled:hover, 
+.btn-pink[disabled]:hover, 
+fieldset[disabled] .btn-pink:hover, 
+.btn-pink.disabled:focus, 
+.btn-pink[disabled]:focus, 
+fieldset[disabled] .btn-pink:focus, 
+.btn-pink.disabled:active, 
+.btn-pink[disabled]:active, 
+fieldset[disabled] .btn-pink:active, 
+.btn-pink.disabled.active, 
+.btn-pink[disabled].active, 
+fieldset[disabled] .btn-pink.active { 
+  background-color: #FFCFCF; 
+  border-color: #FFCFCF; 
+} 
+ 
+.btn-pink .badge { 
+  color: #FFCFCF; 
+  background-color: #FFFFFF; 
 }
-
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active,
-.btn-pink.active,
-.open .dropdown-toggle.btn-pink {
-  color: #FFFFFF;
-  background-color: #FA3CAE;
-  border-color: #FF6BBF;
-}
-
-.btn-pink:active,
-.btn-pink.active,
-.open .dropdown-toggle.btn-pink {
-  background-image: none;
-}
-
-.btn-pink.disabled,
-.btn-pink[disabled],
-fieldset[disabled] .btn-pink,
-.btn-pink.disabled:hover,
-.btn-pink[disabled]:hover,
-fieldset[disabled] .btn-pink:hover,
-.btn-pink.disabled:focus,
-.btn-pink[disabled]:focus,
-fieldset[disabled] .btn-pink:focus,
-.btn-pink.disabled:active,
-.btn-pink[disabled]:active,
-fieldset[disabled] .btn-pink:active,
-.btn-pink.disabled.active,
-.btn-pink[disabled].active,
-fieldset[disabled] .btn-pink.active {
-  background-color: #FF7DC7;
-  border-color: #FF6BBF;
-}
-
-.btn-pink .badge {
-  color: #FF7DC7;
-  background-color: #FFFFFF;
-}
-
 
 .btn-orange {
   color: #474747;
@@ -135,4 +134,50 @@ fieldset[disabled] .btn-lightblue.active {
 .btn-lightblue .badge {
   color: #EBF4F5;
   background-color: #5E5C5C;
+}
+
+.btn-meblue { 
+  color: #FFFFFF; 
+  background-color: #A1DAE6; 
+  border-color: #A1DAE6; 
+} 
+ 
+.btn-meblue:hover, 
+.btn-meblue:focus, 
+.btn-meblue:active, 
+.btn-meblue.active, 
+.open .dropdown-toggle.btn-meblue { 
+  color: #FFFFFF; 
+  background-color: #88CDDB; 
+  border-color: #A1DAE6; 
+} 
+ 
+.btn-meblue:active, 
+.btn-meblue.active, 
+.open .dropdown-toggle.btn-meblue { 
+  background-image: none; 
+} 
+ 
+.btn-meblue.disabled, 
+.btn-meblue[disabled], 
+fieldset[disabled] .btn-meblue, 
+.btn-meblue.disabled:hover, 
+.btn-meblue[disabled]:hover, 
+fieldset[disabled] .btn-meblue:hover, 
+.btn-meblue.disabled:focus, 
+.btn-meblue[disabled]:focus, 
+fieldset[disabled] .btn-meblue:focus, 
+.btn-meblue.disabled:active, 
+.btn-meblue[disabled]:active, 
+fieldset[disabled] .btn-meblue:active, 
+.btn-meblue.disabled.active, 
+.btn-meblue[disabled].active, 
+fieldset[disabled] .btn-meblue.active { 
+  background-color: #A1DAE6; 
+  border-color: #A1DAE6; 
+} 
+ 
+.btn-meblue .badge { 
+  color: #A1DAE6; 
+  background-color: #FFFFFF; 
 }
