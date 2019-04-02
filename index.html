@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Latest compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custombutton.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -23,7 +23,8 @@
   </head>
   
   <body>
-    <img src="wed_img.jpg" id="wed_img" class="img-fluid" >
+    <img src="wed_img.jpg" id="wed_img" class="img-fluid imgs" >
+    <img src="wed_img_sm.jpg" id="wed_img_sm" class="img-fluid imgs" >
     <div class="formcontain">
         <div class="transbox"></div>
         <div class="row">
@@ -37,7 +38,6 @@
 
             <div class="col-sm-1"></div>
             <div class="col-sm-7">
-                <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUOfv0Ci1BuUSy0_FXGZcnL_cbAfVdIukesZSc0zsJMxxplw/viewform?embedded=true" width="640" height="397" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
                 <div style="padding-top: 50px"></div>
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdUOfv0Ci1BuUSy0_FXGZcnL_cbAfVdIukesZSc0zsJMxxplw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd">
                   
@@ -66,7 +66,7 @@
                         <label class="btn btn-info active">
                           <input type="radio" name="entry.10316538" jsname="L9xHkb" autocomplete="off" value="男方" checked> 男方親友
                         </label>
-                        <label class="btn btn-info">
+                        <label class="btn btn-pink">
                           <input type="radio" name="entry.10316538" jsname="L9xHkb" autocomplete="off" value="女方"> 女方親友
                         </label>
                       </div>
@@ -76,7 +76,7 @@
                     <div class="row">
                       <div class="col-sm-6" style="padding-bottom: 7px">
                         <div class="btn-group-toggle" data-toggle="buttons">
-                          <label class="btn btn-warning btn-block ">
+                          <label class="btn btn-orange btn-block ">
                             <input type="checkbox"  autocomplete="off" id="chkCy"> 參加 5/18 嘉義場
                           </label>
                         </div>
@@ -102,7 +102,7 @@
                     <div class="row">
                       <div class="col-sm-6" style="padding-bottom: 7px">
                         <div class="btn-group-toggle" data-toggle="buttons">
-                          <label class="btn btn-warning btn-block">
+                          <label class="btn btn-orange btn-block">
                             <input type="checkbox" autocomplete="off" id="chkTp"> 參加 5/25 台北場
                           </label>
                         </div>
@@ -142,8 +142,21 @@
 
                       
                     </div>
+                    
 
-                    <div class="form-group row">
+                    <div class="form-group">
+                      <div class="input-group col-sm-12">
+                        <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+                        <input type="text"
+                            class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
+                            autocomplete="off" tabindex="0" aria-label="地址"
+                            aria-describedby="i.desc.1993748539 i.err.1993748539"
+                            name="entry.395136124" value="" dir="auto" data-initial-dir="auto"
+                            data-initial-value="" placeholder="寄送地址(含郵遞區號)"/>
+                      </div>
+                    </div>
+
+                    <!-- <div class="form-group row">
                       <div class="col-sm-3 col-xs-4">
                         <label  class="col-form-label">寄送地址</label>
                       </div>
@@ -156,12 +169,23 @@
                             name="entry.395136124" value="" dir="auto" data-initial-dir="auto"
                             data-initial-value="" />
                       </div>
+                    </div> -->
+
+
+                    <div class="form-group">
+                      <div class="input-group col-sm-7">
+                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                        <input type="text"
+                          class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
+                          autocomplete="off" tabindex="0" aria-label="電話"
+                          aria-describedby="i.desc.961496380 i.err.961496380"
+                          name="entry.1747071707" value="" dir="auto" data-initial-dir="auto"
+                          data-initial-value="" placeholder="聯絡電話"/> 
+                      </div>
                     </div>
-
-
-                    <div class="form-group row">
-                      <div class="col-sm-3 col-xs-4">
-                        <label  class="col-form-label ">聯絡電話</label>
+                      <!-- <div class="col-sm-3 col-xs-4">
+                         
+                        <label  class="col-form-label "><i class="fa fa-phone"></i></label>
                       </div>
 
                       <div class="col-sm-9 col-xs-8">
@@ -170,9 +194,9 @@
                           autocomplete="off" tabindex="0" aria-label="電話"
                           aria-describedby="i.desc.961496380 i.err.961496380"
                           name="entry.1747071707" value="" dir="auto" data-initial-dir="auto"
-                          data-initial-value="" />
-                      </div>
-                    </div>
+                          data-initial-value="" placeholder="聯絡電話"/> 
+                      </div> -->
+                      
 
                     <div><h4>特殊需求</h4></div>
 
@@ -232,9 +256,9 @@
                       <small id="emailHelp" class="form-text text-muted">whats this</small>
                     </div>
 -->
-    
-                    <input class="btn btn-warning" type="submit" value="送出" />
                     <span id="msgTY" hidden="true"> 謝謝，已送出 </span>
+                    <input class="btn btn-danger" type="submit" value="送出" />
+                    
                   </form>
     
             </div>

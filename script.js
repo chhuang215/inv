@@ -6,6 +6,18 @@ var formSubmit = function(){
     }
 }
 
+var imgResize = function(){
+    if ($(window).width() > $(window).height()){
+        // $('#wed_img').css('height','');
+        // $('#wed_img').width("100%");
+    }
+    else{
+        // $('#wed_img').css('width','');
+        // $('#wed_img').height("100%");
+    }
+    
+}
+
 $('#chkCy').change(function(){
     if($(this).is(':checked')){
         $('#attendCy').show(400)
@@ -46,7 +58,14 @@ $('.rbVegan').change(function(){
     }
 })
 
+$(window).on('resize')
+
+
 $(document).ready(function () {
-    $('#wed_img').delay(200).animate({'opacity':'1'},700);
-    $('.formcontain').delay(600).animate({'opacity':'1'},600);
+    $('.imgs').delay(200).animate({'opacity':'.95'},850);
+    $('.formcontain').delay(650).animate({'opacity':'1'},600);
+
+    imgResize();
+
+
 });
