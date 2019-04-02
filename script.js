@@ -2,7 +2,8 @@ var submitted=false;
 
 var formSubmit = function(){
     if(submitted)  {
-        $('#msgTY').show()
+        $('#msgTY').show();
+        // $('#mG61Hd').reset();
     }
 }
 
@@ -62,7 +63,7 @@ $(window).on('resize')
 
 
 $(document).ready(function () {
-    $('.imgs').delay(200).animate({'opacity':'.95'},850);
+    $('.imgs').delay(200).animate({'opacity':'.99'},850);
     $('.formcontain').delay(650).animate({'opacity':'1'},600);
 
     imgResize();
