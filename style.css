@@ -5,8 +5,7 @@ html,body{
     /* font-family: 'Microsoft YaHei', 'Open Sans', Arial, sans-serif; */
     font-family: 'Noto Sans TC', sans-serif;
     /* font-weight: 100; */
-    font-size:0.97em;
-    
+    font-size:0.97em; 
     height:100%;
 
 }
@@ -84,6 +83,6 @@ html,body{
     border-radius: .7em
 }
 
-input[type=text]{
-    background-color: rgba(255, 255, 255, .6)
+input[type=text], input[type=tel], input[type=number]{
+    background-color: rgba(255, 255, 255, .65)
 }

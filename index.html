@@ -30,30 +30,31 @@
         <div class="row">
             <div class="col-sm-4" style="text-align: center">
                 <h3>黃至璿 & 黎明</h3>
-                
+                <span></span>
                 <div class="row">
-                  <div class="col-xs-6"
-                    style="border:rgba(213, 220, 255, 0.3); border-style: solid;border-radius: 1.2em;">
-                      <h4>2019.5.18 嘉義</h4>
-                      <div style="padding-bottom:4px"></div>
+                  <div class="col-xs-12"
+                    style="border:rgba(213, 220, 255, 0.3); border-style: solid;border-radius: 1.2em; background: rgba(255,255,255,0.4)">
+                      <h4>2019.5.18</br>嘉義</h4>
+                      <div style="padding-bottom:2px"></div>
                       <h5>10:00AM 婚禮</h5>
                       <div style="font-size:.7em">地點</div>
-                      <div>興村教會</div>
-                      <div style="font-size: .65em">嘉義市東區軍輝路47號</div>
-                      <div style="padding-bottom:4px"></div>
+                      <div style="font-size:1.1em">興村教會</div>
+                      <div style="font-size: 1em"> <a class="btn btn-link" href="https://goo.gl/maps/WZufTfThLaG2" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>嘉義市東區軍輝路47號</a></div>
+                      <div style="padding-bottom:20px"></div>
                       <h5>12:00PM 喜宴</h5>
                       <div style="font-size:.7em">地點</div>
-                      <div>一葉餐廳</div>
-                      <div style="font-size: .65em">嘉義市西區博愛路二段700號</div>
+                      <div style="font-size:1.1em">一葉餐廳</div>
+                      <div style="font-size: 1em"> <a class="btn btn-link" href="https://goo.gl/maps/SJFLNoUfZj22" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>嘉義市西區博愛路二段700號 </a></div>
                   </div>
-
-                  <div class="col-xs-6 "
-                    style="border:rgba(245, 209, 209, 0.3); border-style: solid; border-radius: 1.2em;">
-                      <h4>2019.5.25 台北</h4>
-                      <div style="padding-bottom:4px"></div>
+                  <div class ="col-xs-12" style="padding-top: 6px;"></div>
+                  <div class="col-xs-12"
+                    style="border:rgba(245, 209, 209, 0.3); border-style: solid; border-radius: 1.2em; background: rgba(255,255,255,0.4)">
+                      <h4>2019.5.25</br>台北</h4>
+                      <div style="padding-bottom:2px"></div>
                       <h5>6:00PM 喜宴</h5>
                       <div style="font-size:.7em">地點</div>
-                      <p>故宮京華</p>
+                      <div style="font-size:1.1em">台北故宮晶華</div>
+                      <div style="font-size: 1em"> <a class="btn btn-link" href="https://goo.gl/maps/Wfk5LoeRhxC2" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>台北市士林區至善路二段221號</a></div>
                   </div>
 
                 </div>
@@ -116,7 +117,7 @@
                       </div>
 
                       <div class="col-xs-3">
-                          <input id="txtAttendCy" type="number" value="0" min="0" step="1"
+                          <input id="txtAttendCy" type="number" value="0" min="0" step="1" inputmode="numeric"
                                 class="form-control" jsname="YPqjbf" tabindex="-1"
                                 autocomplete="off" aria-label="5/18嘉義場 人數"
                                 aria-describedby="i.desc.959110369 i.err.959110369"
@@ -142,7 +143,7 @@
                       </div>
 
                       <div class="col-xs-3">
-                          <input id="txtAttendTp" type="number" value="0" min="0" step="1"
+                          <input id="txtAttendTp" type="number" value="0" min="0" step="1"  inputmode="numeric"
                             class="form-control" jsname="YPqjbf" tabindex="-1"
                             autocomplete="off" aria-label="5/25台北場 人"
                             aria-describedby="i.desc.1206703925 i.err.1206703925"
@@ -188,7 +189,7 @@
                       <div class="col-sm-7 col-xs-12">
                         <div class="input-group">
                           <div class="input-group-addon"><i class="fa fa-phone"></i></div>
-                          <input type="text"
+                          <input type="tel"
                             class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf"
                             autocomplete="off" tabindex="0" aria-label="電話"
                             aria-describedby="i.desc.961496380 i.err.961496380"
@@ -208,10 +209,10 @@
                       <div class="col-sm-4 col-xs-6">
                         <div class="btn-group" data-toggle="buttons">
                           <label class="btn btn-sm btn-default" tabindex="0">
-                            <input type="radio" name="options" class="rbNeedChair" value="0" required> 不需要
+                            <input type="radio" name="rdChildren" class="rbNeedChair" value="0" required> 不需要
                           </label>
                           <label class="btn btn-sm btn-default">
-                            <input type="radio" name="options" value="1" class="rbNeedChair"> 需要
+                            <input type="radio" name="rdChildren" value="1" class="rbNeedChair"> 需要
                           </label>
                         </div>
                       </div>
@@ -233,10 +234,10 @@
                         
                         <div class="btn-group" data-toggle="buttons">
                           <label class="btn btn-sm btn-default" tabindex="0">
-                            <input type="radio" name="options" class="rbVegan" value="0" required> 不需要
+                            <input type="radio" name="rdVegan" class="rbVegan" value="0" required> 不需要
                           </label>
                           <label class="btn btn-sm btn-default">
-                            <input type="radio" name="options" value="1" class="rbVegan"> 需要
+                            <input type="radio" name="rdVegan" value="1" class="rbVegan"> 需要
                           </label>
                         </div>
                       </div>
@@ -268,15 +269,12 @@
         </div>
     
     </div>
-    <span id="msgTY" hidden="true"> 謝謝，已送出 </span>
+    <div id="msgTY" hidden="true"> 謝謝，已送出 </div>
     
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-    
 
     <!-- Popper JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->

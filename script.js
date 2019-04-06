@@ -3,26 +3,15 @@ var submitted=false;
 var formSubmit = function(){
     if(submitted)  {
         $('#msgTY').show();
-        // $('#mG61Hd').reset();
+        $('form').reset();
         $('.formcontain').hide();
     }
 }
 
-var imgResize = function(){
-    if ($(window).width() > $(window).height()){
-        // $('#wed_img').css('height','');
-        // $('#wed_img').width("100%");
-    }
-    else{
-        // $('#wed_img').css('width','');
-        // $('#wed_img').height("100%");
-    }
-    
-}
-
 $('#chkCy').change(function(){
     if($(this).is(':checked')){
-        $('#attendCy').show(400)
+        $('#attendCy input').val('');
+        $('#attendCy').show(400);
     }
     else{
         $('#attendCy').hide(400);
@@ -32,6 +21,7 @@ $('#chkCy').change(function(){
 
 $('#chkTp').change(function(){
     if($(this).is(':checked')){
+        $('#attendTp input').val('');
         $('#attendTp').show(400)
     }
     else{
@@ -59,9 +49,6 @@ $('.rbVegan').change(function(){
         $('#inputVegan input').val("");
     }
 })
-
-$(window).on('resize')
-
 
 $(document).ready(function () {
     $('.imgs').delay(200).animate({'opacity':'.99'},850);
