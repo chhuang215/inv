@@ -4,6 +4,7 @@ var formSubmit = function(){
     if(submitted)  {
         $('#msgTY').show();
         // $('#mG61Hd').reset();
+        $('.formcontain').hide();
     }
 }
 
@@ -66,7 +67,7 @@ $(document).ready(function () {
     $('.imgs').delay(200).animate({'opacity':'.99'},850);
     $('.formcontain').delay(650).animate({'opacity':'1'},600);
 
-    imgResize();
+    //imgResize();
 
 
 });
