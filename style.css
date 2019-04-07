@@ -18,6 +18,8 @@ html,body{
     padding: 5px 5px 15px 5px;
     /* height: 100%; */
     opacity:0;
+    background: rgba(255, 255, 255, .55);
+    border-radius: .7em;
 }
 
 
@@ -59,30 +61,38 @@ html,body{
 }
 
 @media (min-width: 769px) { 
-    /* #wed_img{
-        visibility: visible
-    } */
     #wed_img_sm{
         visibility: hidden
     }
     
 }
 
-
-.transbox{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background: white;
-    opacity:0.45;
-    /* z-index: -1; */
-    border-radius: .7em
-}
-
 input[type=text], input[type=tel], input[type=number]{
     background-color: rgba(255, 255, 255, .65)
 }
+
+
+#infobox .lblLocation{
+    font-size: .9em;
+}
+
+
+#infobox .lblLocName{
+    font-size:1.15em;
+    font-weight: 600;
+}
+
+#infobox .lblLocAddr{
+    font-size:1.15em;
+}
+
+.infodate{
+    /* border-style: solid; 
+    border-radius: 1.2em;  */
+    background: rgba(255,255,255,0.56)
+}
+
+/* #mG61Hd{
+    padding:5px;
+    border:1px solid;
+} */
