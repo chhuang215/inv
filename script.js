@@ -1,11 +1,17 @@
 var submitted=false;
-
+var contactSubmitted=false;
 var formSubmit = function(){
     if(submitted)  {
         $('#tabnav a[href="#infobox"]').tab('show');
         $('#msgTY').modal('toggle');
         $('#mG61Hd')[0].reset();
-        
+    }
+}
+
+var contactSubmit = function(){
+    if(contactSubmitted)  {
+        $('#contactForm')[0].reset();
+        $('#msgConfirm').fadeIn(1500).delay(2000).fadeOut(1000);
     }
 }
 
@@ -73,8 +79,4 @@ $('.rbVegan').change(function(){
 $(document).ready(function () {
     $('.imgs').delay(200).animate({'opacity':'.99'},850);
     $('.formcontain').delay(650).animate({'opacity':'1'},600);
-
-    //imgResize();
-
-
 });
