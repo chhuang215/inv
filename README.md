@@ -1,2 +1,1 @@
-# inv
-A Wedding invitation form
+Gem and Ming's Wedding info / invitation site
