@@ -17,9 +17,9 @@ var contactSubmit = function(){
 
 $('#chkCy').change(function(){
     if($(this).is(':checked')){
-        $('#attendCy input').val('');
+        $('#txtAttendCy').val('');
         $('#attendCy').show(400);
-
+        $('#txtAttendCy').focus();
         // $('#attendCy').attr();
     }
     else{
@@ -30,8 +30,9 @@ $('#chkCy').change(function(){
 
 $('#chkTp').change(function(){
     if($(this).is(':checked')){
-        $('#attendTp input').val('');
-        $('#attendTp').show(400)
+        $('#txtAttendTp').val('');
+        $('#attendTp').show(400);
+        $('#txtAttendTp').focus();
     }
     else{
         $('#attendTp').hide(400);
@@ -77,6 +78,7 @@ $('.rbVegan').change(function(){
 })
 
 $(document).ready(function () {
-    $('.imgs').delay(200).animate({'opacity':'.99'},850);
-    $('.formcontain').delay(650).animate({'opacity':'1'},600);
+    $('.imgs').delay(150).animate({'opacity':'.99'}, 850, function(){
+        $('.formcontain').animate({'opacity':'1'},600);
+    });
 });

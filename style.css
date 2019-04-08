@@ -19,7 +19,7 @@ html,body{
 
 .imgs{
     position: fixed;
-    top: 0;
+    /* top: 0; */
     bottom: 0;
     opacity: 0;
 }
@@ -27,8 +27,6 @@ html,body{
 #wed_img{
     top: 0;
     left: 0;
-    /* bottom: 0; */
-    /* left: 0; */
     height: 100%;
 }
 
@@ -41,7 +39,6 @@ html,body{
 
 @media (max-width: 768px) { 
     #wed_img{
-        /* visibility: hidden; */
         width: 100%;
         filter: blur(20px);
     }
@@ -76,8 +73,8 @@ textarea {
     font-weight: 600;
 }
 
-#infobox .lblLocAddr{
-    font-size:1.15em;
+#infobox .lblLocAddr a{
+    font-size:1.14em;
 }
 
 .infodate{
