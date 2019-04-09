@@ -109,8 +109,8 @@ $(document).ready(function () {
         }
     })
 
-    $('.imgs').delay(150).animate({'opacity':'.99'}, 850, function(){
-        $('.formcontain').delay(600).animate({'opacity':'1'},600);
+    $('.imgs').delay(150).animate({'opacity':'.99'}, 650, function(){
+        $('.formcontain').delay(300).animate({'opacity':'1'},600);
     });
 
 });
