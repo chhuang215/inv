@@ -110,7 +110,7 @@ $(document).ready(function () {
     })
 
     $('.imgs').delay(150).animate({'opacity':'.99'}, 850, function(){
-        $('.formcontain').delay(1500).animate({'opacity':'1'},600);
+        $('.formcontain').delay(600).animate({'opacity':'1'},600);
     });
 
 });
