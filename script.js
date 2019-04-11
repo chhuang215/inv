@@ -1,7 +1,7 @@
 var submitted=false;
 var contactSubmitted=false;
 
-var formSubmit = function(){
+function formSubmit(){
     if(submitted)  {
         $('#tabnav a[href="#infobox"]').tab('show');
         $('#msgTY').modal('toggle');
@@ -14,16 +14,22 @@ var formSubmit = function(){
     }
 }
 
-var contactSubmit = function(){
+function contactSubmit(){
     if(contactSubmitted)  {
         $('#contactForm')[0].reset();
         $('#msgConfirm').fadeIn(1500).delay(2000).fadeOut(1000);
+        $('#btnContactSubmit').prop("disabled", false);
     }
 }
 
 function onsubmitFun(){
     $('#btnSubmit').prop("disabled", true);
     submitted=true;
+}
+
+function oncontactSubmitFun(){
+    $('#btnContactSubmit').prop("disabled", true);
+    contactSubmitted=true;
 }
 
 function toggleSpecialNeeds(){
