@@ -10,6 +10,7 @@ var formSubmit = function(){
         $('#mG61Hd input:checkbox').prop('checked', false).parent().removeClass('active');
         $('#mG61Hd input:radio').trigger('change');
         $('#mG61Hd input:checkbox').trigger('change');
+        $('#btnSubmit').prop("disabled", false);
     }
 }
 
@@ -20,11 +21,21 @@ var contactSubmit = function(){
     }
 }
 
+function onsubmitFun(){
+    $('#btnSubmit').prop("disabled", true);
+    submitted=true;
+}
+
 function toggleSpecialNeeds(){
     if ($('#chkCy').is(':checked') || $('#chkTp').is(':checked')) {
+        
         $('#specialNeeds').show(150);
+        $('.rbVegan').attr('required','');
+        $('.rbNeedChair').attr('required','');
     }
     else{
+        $('.rbVegan').removeAttr('required');
+        $('.rbNeedChair').removeAttr('required');
         $('#specialNeeds').hide(150);
         $('#specialNeeds input:radio').prop('checked', false).parent().removeClass('active');
         $('#specialNeeds input:radio').trigger( "change");

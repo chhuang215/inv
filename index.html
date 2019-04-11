@@ -88,7 +88,7 @@
               <!-- <div style="padding-top: 45px"></div> -->
               <form class="form-horizontal"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSdUOfv0Ci1BuUSy0_FXGZcnL_cbAfVdIukesZSc0zsJMxxplw/formResponse"
-                method="post" target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd">
+                method="post" target="hidden_iframe" onsubmit="onsubmitFun()" id="mG61Hd">
     
                 <div class="form-group">
                   <div class="col-xs-4">
@@ -259,7 +259,7 @@
                     <div class="col-sm-4 col-xs-6">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-sm btn-default" tabindex="0">
-                          <input type="radio" name="rbNeedChair" class="rbNeedChair" required> 不需要
+                          <input type="radio" name="rbNeedChair" class="rbNeedChair"> 不需要
                         </label>
                         <label class="btn btn-sm btn-default">
                           <input type="radio"  id="rbNeedKidChair" name="rbNeedChair" class="rbNeedChair"> 需要
@@ -284,7 +284,7 @@
       
                       <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-sm btn-default" tabindex="0">
-                          <input type="radio" name="rbVegan" class="rbVegan" required> 不需要
+                          <input type="radio" name="rbVegan" class="rbVegan"> 不需要
                         </label>
                         <label class="btn btn-sm btn-default">
                           <input type="radio" id="rbNeedVegan" name="rbVegan" class="rbVegan"> 需要
@@ -298,7 +298,7 @@
                     </div>
                   </div>
                 </div>
-                <input class="btn btn-danger" type="submit" value="送出" />
+                <input id="btnSubmit" class="btn btn-danger" type="submit" value="送出" />
     
               </form>
     
