@@ -60,7 +60,7 @@ $(document).ready(function () {
             $('#chkCy').trigger( "change");
             $('#chkTp').trigger( "change");
             $('#attendWedding').hide(200);
-            $('#specialNeeds input:radio').removeAttr('required',);
+            $('#specialNeeds input:radio').removeAttr('required');
         }
     });
 
