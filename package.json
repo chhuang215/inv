@@ -1,0 +1,20 @@
+{
+  "name": "inv",
+  "version": "1.0.0",
+  "description": "Gem and Ming's Wedding info / invitation site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chhuang215/inv.git"
+  },
+  "author": "Chih-Hsuan Huang",
+  "license": "ISC",
+  "homepage": "https://github.com/chhuang215/inv#readme",
+  "devDependencies": {
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-uglify": "^3.0.2"
+  }
+}
