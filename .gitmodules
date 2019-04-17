@@ -1,0 +1,3 @@
+[submodule "dist"]
+	path = dist
+	url = https://gem-and-ming-wedding.scm.gear.host:443/gem-and-ming-wedding.git
