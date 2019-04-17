@@ -96,3 +96,21 @@ textarea {
     margin: .2em;
     box-shadow: 5px 4px 14px #979797;
 }
+
+
+
+.modal-header{
+    padding: 6px 15px 6px 6px;
+}
+
+
+
+.imgGallery{
+    max-height: 75vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#carouselGallery .item{
+    text-align: center;
+}
