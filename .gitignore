@@ -1,6 +1,6 @@
 gitignore
 node_modules
-dist
+# dist
 gulpfile.js
 package-lock.json
 package.json
