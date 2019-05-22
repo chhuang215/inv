@@ -50,6 +50,15 @@ function toggleSpecialNeeds(){
 
 $(document).ready(function () {
     
+    $('[data-toggle="tooltip"]').tooltip(); 
+
+    $("#rsvpfull").on("click", function(e) {
+        // e.preventDefault();
+        // return false;
+        
+    });
+
+
     $('.rbAttend').change(function(){
         if($('#rdAttendWedding').is(':checked')){
             $('#attendWedding').show(200);
