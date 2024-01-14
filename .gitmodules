@@ -1,3 +1,4 @@
 [submodule "dist"]
 	path = dist
-	url = https://gem-and-ming-wedding.scm.gear.host:443/gem-and-ming-wedding.git
+	# url = https://gem-and-ming-wedding.scm.gear.host:443/gem-and-ming-wedding.git
+  url = https://github.com/chhuang215/inv-dist.git
